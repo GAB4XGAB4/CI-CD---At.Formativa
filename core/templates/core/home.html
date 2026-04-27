@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PsicoNote</title>
+</head>
+<body>
+    <h1>Minhas Notas</h1>
+    <ul>
+        {% for note in notes %}
+            <li>{{ note.title }} - {{ note.content }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
